@@ -18,10 +18,10 @@ INSERT INTO `job_grades` (job_name, grade, name, label, salary, skin_male, skin_
 	('catsecurity',0,'recruit','Recruit',600,'{}','{}'),
 	('catsecurity',0,'recruit','Bodyguard',650,'{}','{}'),
 	('catsecurity',0,'recruit','Manager',700,'{}','{}'),
-	('catsecurity',1,'boss','Boss',750,'{}','{}'),
+	('catsecurity',1,'boss','Boss',750,'{}','{}')
 ;
 
 INSERT INTO `items` (`name`, `label`) VALUES
-    (bulletproof, Bulletproof),
-	(komatialexisferou, Resource of Bulletproof)
+    ('bulletproof', 'Bulletproof'),
+	('komatialexisferou', 'Resource of Bulletproof')
 ;
