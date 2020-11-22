@@ -12,7 +12,7 @@ AddEventHandler('esx_catsecurity:removeItemAddItem', function(item)
     local gammaQuantity = xPlayer.getInventoryItem('komatialexisferou').count
 	
     if item == 'bulletproof' then
-            if hasItem.limit ~= -1 and (hasItem.count + Config.NeededItemAmount) > hasItem.limit then
+            if hasItem.limit ~= -1 and (hasItem.count + Config.NeededItemAmount) > hasItem.weight then
             TriggerClientEvent('mythic_notify:client:SendAlert', source, {type="error", text="You dont have enough space!"})
 			elseif gammaQuantity < 1 then
             TriggerClientEvent('mythic_notify:client:SendAlert', source, {type="error", text="You dont have resource of bulletproof"})
